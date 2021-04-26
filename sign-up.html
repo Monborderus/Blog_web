@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/sign-up.css" />
+
+    <title>Blog - Sign Up</title>
+  </head>
+  <body>
+    <main class="main-sign-up">
+      <form action="#" class="form sign-up">
+        <div class="img-wrapper">
+          <label>
+            <img src="./src/assets/user-default.jpg" alt="" class="img" />
+            <input type="file" class="file-hidden" accept=".png, .jpg, .jpeg" />
+          </label>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="text" class="login" required minlength="3" />
+
+          <input type="email" class="email" required />
+
+          <input
+            type="password"
+            class="password password-1"
+            required
+            minlength="6"
+          />
+          <input
+            type="password"
+            class="password password-2"
+            required
+            minlength="6"
+          />
+
+          <div class="buttons">
+            <button class="button sbmt" type="submit">Sign Up</button>
+            <button class="button rst" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="./src/scripts/sign-up/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.main-sign-in {
+  background-color: rgb(86, 110, 177);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form {
+    border: solid 3px rgb(3, 3, 3);
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(168, 43, 43);
+
+    .log {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      border-radius: 4px;
+
+      .email {
+        padding: 10px;
+        margin: 10px;
+      }
+      .password {
+        padding: 10px;
+        margin: 10px;
+      }
+    }
+
+    .subm {
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+
+      .button {
+        border-radius: 4px;
+        margin: 10px;
+        width: 120px;
+        height: 35px;
+      }
+    }
+  }
+}

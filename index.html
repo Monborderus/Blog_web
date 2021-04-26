@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Blog</title>
+  </head>
+  <body>
+
+    <header class="header">
+
+      <div class="header-bubble">
+
+        <div class="create-text-bubble">
+
+          <span class="create-text">Create new post</span>
+
+          <input type="text" id="newPostTitle" class="input-title" placeholder="Enter your new post title">
+      
+          <textarea class="header-textarea" name="" id="newPostText" placeholder="Enter new post text here"></textarea>
+
+        </div>
+
+        <div class="create-button-bubble">
+
+          <div class="img-add-bubble">
+            <label>
+              <div id="label" class="input-img-button"> 
+                <input name="F" class="input-img-add" type="file" id="newPostImg" accept=".png, .jpg, .jpeg" size="20" aria-hidden="true">
+                Choose your file</div>
+            </label>
+          </div>
+
+          <button class="create-new-post-btn" id="newPostCreate">Create</button>
+
+        </div>
+
+      </div>
+
+    </header>
+    
+    <main class="main">
+
+      <ul class="posts"></ul>
+
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

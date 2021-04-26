@@ -1,0 +1,63 @@
+.main-sign-in {
+  background-color: #566eb1;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-sign-in .form {
+  border: solid 3px #030303;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: #a82b2b;
+}
+
+.main-sign-in .form .log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.main-sign-in .form .log .email {
+  padding: 10px;
+  margin: 10px;
+}
+
+.main-sign-in .form .log .password {
+  padding: 10px;
+  margin: 10px;
+}
+
+.main-sign-in .form .subm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-sign-in .form .subm .button {
+  border-radius: 4px;
+  margin: 10px;
+  width: 120px;
+  height: 35px;
+}
+/*# sourceMappingURL=sign-in.css.map */

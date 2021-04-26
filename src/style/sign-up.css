@@ -1,0 +1,84 @@
+.main-sign-up {
+  background-color: #b8eede;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-sign-up .form {
+  border: solid 3px #646464;
+  border-radius: 10px;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  background-color: #fde1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-sign-up .form .img-wrapper {
+  width: 50%;
+}
+
+.main-sign-up .form .img-wrapper label {
+  width: 100%;
+  height: 100%;
+}
+
+.main-sign-up .form .img-wrapper .img {
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  border: solid 4px #5f5f5f;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-sign-up .form .img-wrapper .file-hidden {
+  display: none;
+}
+
+.main-sign-up .form .field-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-sign-up .form .field-wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-sign-up .form .field-wrapper .buttons .button {
+  width: 140px;
+  padding: 10px 0;
+}
+
+.main-sign-up .form .field-wrapper > input {
+  width: 266px;
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 6px;
+  border: solid 2px #4e4e4e;
+  padding: 0 15px;
+}
+/*# sourceMappingURL=sign-up.css.map */

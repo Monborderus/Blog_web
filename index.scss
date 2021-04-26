@@ -1,0 +1,356 @@
+::placeholder {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 212, 212);
+  font-family: Comic Sans MS, Comic Sans, cursive;
+
+  .header-bubble {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 200px;
+    margin-top: 50px;
+
+    .create-text-bubble {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+
+      .create-text {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .input-title {
+        margin-bottom: 30px;
+        width: 600px;
+      }
+
+      .header-textarea {
+        width: 600px;
+        height: 400px;
+        //font-size: 16px;
+        //font-family: "Times New Roman", Times, serif;
+      }
+    }
+
+    .create-button-bubble {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+
+      .img-add-bubble {
+        position: relative;
+        margin-bottom: 20px;
+
+        .input-img-add {
+          position: absolute;
+          left: -9999999999999px;
+        }
+
+        .input-img-button {
+          display: inline-block;
+          font-family: arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          color: rgb(68, 68, 68);
+          text-decoration: none;
+          user-select: none;
+          padding: 0.5em 1.2em;
+          outline: none;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+          background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+          transition: all 0.218s ease 0s;
+        }
+
+        .input-img-button:hover {
+          color: rgb(24, 24, 24);
+          border: 1px solid rgb(198, 198, 198);
+          background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-img-button:active {
+          color: rgb(51, 51, 51);
+          border: 1px solid rgb(204, 204, 204);
+          background: rgb(238, 238, 238)
+            linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+        }
+      }
+
+      .create-new-post-btn {
+        display: inline-block;
+        font-family: arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(68, 68, 68);
+        text-decoration: none;
+        user-select: none;
+        padding: 0.5em 1.2em;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+        transition: all 0.218s ease 0s;
+      }
+
+      .create-new-post-btn:hover {
+        color: rgb(24, 24, 24);
+        border: 1px solid rgb(198, 198, 198);
+        background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .create-new-post-btn:active {
+        color: rgb(51, 51, 51);
+        border: 1px solid rgb(204, 204, 204);
+        background: rgb(238, 238, 238)
+          linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+      }
+    }
+  }
+}
+
+main {
+  //width: 1519px;
+  height: 100%;
+  background-color: rgb(202, 212, 212);
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+
+  .posts {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    //margin: 0px 0px 50px 50px;
+
+    li {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      border: solid 3px rgb(202, 212, 212);
+      border-radius: 10px;
+      //box-shadow: 0, 30px, 30px rgb(0, 0, 0);
+      margin-bottom: 50px;
+      padding: 0px 200px;
+
+      .img-post {
+        width: 600px;
+        margin: 10px 0px;
+      }
+
+      .text {
+        margin: 10px 0px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+      }
+
+      .autor {
+        margin-right: auto;
+        display: flex;
+        //align-items: center;
+        width: 600px;
+        justify-content: space-between;
+        margin: 0px 0px 30px 0px;
+
+        .autor-bubble {
+          display: flex;
+          align-items: center;
+
+          .autor-ava {
+            width: 40px;
+            border-radius: 50%;
+            border: solid 2px #444141;
+          }
+
+          .autor-name-date {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            font-size: 12px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            .autor-name {
+              font-size: 18px;
+              font-weight: bold;
+              font-family: "Times New Roman", Times, serif;
+            }
+
+            .post-date {
+              font-size: 10px;
+            }
+          }
+        }
+
+        .button-bubble {
+          .button-coments {
+            display: inline-block;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            user-select: none;
+            padding: 0 5px;
+            outline: none;
+            border-radius: 2px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+          }
+          .button-coments:before {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1; /* для больших картинок 0 */
+            padding-right: 5px;
+          }
+          .button-coments:before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/16/Text-message-icon.png);
+          }
+          .button-coments:hover {
+            background: linear-gradient(#ececeb, #eaeaea);
+            box-shadow: inset rgba(0, 0, 0, 0.5) 0 -1px 1px,
+              inset rgba(0, 0, 0, 0.2) 0 1px, inset #fff 0 2px,
+              rgba(0, 0, 0, 0.2) 0 1px 1px;
+          }
+          .button-coments:active {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+            box-shadow: inset rgba(0, 0, 0, 0.8) 0 1px 2px,
+              inset rgba(0, 0, 0, 0.05) 0 -1px 0, #fff 0 1px 1px;
+          }
+
+          .button-like {
+            display: inline-block;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            user-select: none;
+            padding: 0 5px;
+            outline: none;
+            border-radius: 2px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+          }
+          .button-like:before {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1; /* для больших картинок 0 */
+            padding-right: 5px;
+          }
+          .button-like:before {
+            content: url(https://icons.iconarchive.com/icons/icons8/windows-8/16/Very-Basic-Like-Outline-icon.png);
+          }
+          .button-like:hover {
+            background: linear-gradient(#ececeb, #eaeaea);
+            box-shadow: inset rgba(0, 0, 0, 0.5) 0 -1px 1px,
+              inset rgba(0, 0, 0, 0.2) 0 1px, inset #fff 0 2px,
+              rgba(0, 0, 0, 0.2) 0 1px 1px;
+          }
+          .button-like:active {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+            box-shadow: inset rgba(0, 0, 0, 0.8) 0 1px 2px,
+              inset rgba(0, 0, 0, 0.05) 0 -1px 0, #fff 0 1px 1px;
+          }
+
+          .button-like:focus {
+            content: url(https://icons.iconarchive.com/icons/icons8/windows-8/16/Very-Basic-Like-icon.png);
+          }
+
+          .like-num {
+            font-family: Comic Sans MS, Comic Sans, cursive;
+          }
+        }
+      }
+      .form-comment {
+        margin: 0 0 40px 0;
+        .comment-button-div {
+          display: flex;
+          justify-content: center;
+          .comment-submit-button {
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+            user-select: none;
+            padding: 0.5em 1.2em;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+            background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+            transition: all 0.218s ease 0s;
+          }
+          .comment-submit-button:hover {
+            color: rgb(24, 24, 24);
+            border: 1px solid rgb(198, 198, 198);
+            background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          }
+          .comment-submit-button:active {
+            color: rgb(51, 51, 51);
+            border: 1px solid rgb(204, 204, 204);
+            background: rgb(238, 238, 238)
+              linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+          }
+
+          .comment-reset-button {
+            display: inline-block;
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+            user-select: none;
+            padding: 0.5em 1.2em;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+            background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+            transition: all 0.218s ease 0s;
+          }
+          .comment-reset-button:hover {
+            color: rgb(24, 24, 24);
+            border: 1px solid rgb(198, 198, 198);
+            background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          }
+          .comment-reset-button:active {
+            color: rgb(51, 51, 51);
+            border: 1px solid rgb(204, 204, 204);
+            background: rgb(238, 238, 238)
+              linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+          }
+        }
+      }
+
+      .textarea-comment {
+        width: 600px;
+        height: 100px;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    .date {
+      display: none;
+    }
+    .title {
+      font-size: 42px;
+      font-family: Impact, fantasy;
+      margin: 40px 0px;
+    }
+  }
+}
